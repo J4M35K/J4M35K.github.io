@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura&display=swap">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#" class="logo"><img src="./assets/jocki.png" alt="Jocki Logo" style="height: 40px;"></a>
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="index.html#home" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <!-- <a href="#" class="nav-link"><i class="fas fa-search"></i></a> -->
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About the Team</h1>
+    <p><b>James Kingsley</b></p>
+    <p><b>Anna Huang</b></p>
+    <p><b>Abhinav Nandwani</b></p>
+    <p>Coming Soon...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="logo"><img src="./assets/vinyl.png" alt="Jocki Icon" style="height: 40px;"></a>
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; 2024 Jocki. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add click event listener to accordion headers
+    const accordionHeaders = document.querySelectorAll('.accordion-item-header');
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        accordionItem.classList.toggle('active');
+        const content = accordionItem.querySelector('.accordion-item-content');
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
