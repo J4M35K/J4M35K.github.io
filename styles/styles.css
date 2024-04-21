@@ -1,6 +1,16 @@
-body, h1, h2, h3, h4, h5, h6, p, a, form label {
-    font-family: "Futura", sans-serif; /* Set Futura as the font family */
-  }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form label {
+    font-family: "Futura", sans-serif;
+    /* Set Futura as the font family */
+}
 
 html {
     -ms-text-size-adjust: 100%;
@@ -15,10 +25,10 @@ body {
     background-color: #202020;
     color: #fff;
     margin: 0;
-    padding-bottom: 300px; 
+    padding-bottom: 300px;
 }
 
-p{
+p {
     font-size: 16px;
 }
 
@@ -43,12 +53,17 @@ section {
 
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #fff;
     font-weight: bold;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-size: 20px;
 }
 
@@ -121,7 +136,8 @@ a:hover {
 .accordion {
     max-width: 600px;
     margin: 0 auto;
-    font-family: "Futura", sans-serif; /* Set Futura as the font family */
+    font-family: "Futura", sans-serif;
+    /* Set Futura as the font family */
 }
 
 .accordion-item {
@@ -152,12 +168,14 @@ a:hover {
 
 .arrow-icon {
     float: right;
-    transition: transform 0.3s ease; /* Add transition effect */
-  }
-  
-  .active .arrow-icon {
-    transform: rotate(180deg); /* Rotate the arrow when accordion is active */
-  }
+    transition: transform 0.3s ease;
+    /* Add transition effect */
+}
+
+.active .arrow-icon {
+    transform: rotate(180deg);
+    /* Rotate the arrow when accordion is active */
+}
 
 /* Footer */
 .footer {
@@ -301,4 +319,94 @@ form button {
 
 form button:hover {
     background: #e246ab;
+}
+
+/* About Page */
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+        /* Ensures logo takes full width */
+    }
+
+    /* Container */
+    .container {
+        padding: 40px 20px;
+    }
+
+    /* Hero Section */
+    #home {
+        padding: 80px 20px;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 40px 20px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px;
+    }
+
+    /* FAQ */
+    #FAQ {
+        padding: 40px 20px;
+    }
+
+    /* About Section */
+    #about {
+        padding: 40px 20px;
+    }
+
+    #about h1 {
+        font-size: 2.5rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+    }
 }
