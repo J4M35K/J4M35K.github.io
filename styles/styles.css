@@ -1,4 +1,14 @@
-body, h1, h2, h3, h4, h5, h6, p, a, form label, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form label,
+li {
     font-family: "Futura", sans-serif;
     /* Set Futura as the font family */
 }
@@ -61,7 +71,7 @@ a:hover {
     text-decoration: underline;
 }
 
-li{
+li {
     margin-left: 5rem;
 }
 
@@ -305,10 +315,12 @@ form button:hover {
 
 /* About Page */
 .team-members {
-    display: flex; 
-    justify-content: center; /* Center align the items horizontally */
-    gap: 20px; 
-  }
+    display: flex;
+    justify-content: center;
+    /* Center align the items horizontally */
+    gap: 20px;
+}
+
 .team-member {
     text-align: center;
     margin-bottom: 30px;
@@ -326,6 +338,16 @@ form button:hover {
 
 .team-member p {
     margin: 5px 0;
+}
+
+/* Styles for the checkmark */
+.checkmark {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.checkmark img {
+    width: 70px;
 }
 
 @media screen and (max-width: 768px) {
@@ -399,5 +421,5 @@ form button:hover {
     .team-members {
         flex-direction: column;
         align-items: center;
-      }
+    }
 }
