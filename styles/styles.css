@@ -422,4 +422,9 @@ form button:hover {
         flex-direction: column;
         align-items: center;
     }
+
+    /* About Section */
+    #confirmation, #thankyou {
+        padding: 40px 20px;
+    }
 }
