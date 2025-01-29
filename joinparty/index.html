@@ -75,10 +75,13 @@
     </script> -->
         <!-- JavaScript for Redirect -->
     <script>
-        // Check if the current path is '/joinparty/*' and redirect to '/joinparty'
-        if (window.location.pathname.startsWith('/joinparty/')) {
-            window.location.replace('/joinparty');
+        // Check if the current path is '/joinparty/*' but not already at '/joinparty'
+        if (window.location.pathname.startsWith('/joinparty/') && window.location.pathname !== '/joinparty') {
+            // Redirect to the '/joinparty' path
+            window.location.href = '/joinparty'; // using href to follow standard browser redirection
         }
+</script>
+
     </script>
 </body>
 
