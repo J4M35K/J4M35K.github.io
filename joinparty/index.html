@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Redirect to /joinparty if on any /joinparty/* path -->
+    <meta http-equiv="refresh" content="0;url=/joinparty" />
+
     <!-- <meta http-equiv="refresh" content="5;url=https://link-to-app-store.com">
     <script type="text/javascript">
         setTimeout(function() {
@@ -73,16 +77,6 @@
             }
         }, 1000);
     </script> -->
-        <!-- JavaScript for Redirect -->
-    <script>
-        // Check if the current path is '/joinparty/*' but not already at '/joinparty'
-        if (window.location.pathname.startsWith('/joinparty/') && window.location.pathname !== '/joinparty') {
-            // Redirect to the '/joinparty' path
-            window.location.href = '/joinparty'; // using href to follow standard browser redirection
-        }
-</script>
-
-    </script>
 </body>
 
 </html>
