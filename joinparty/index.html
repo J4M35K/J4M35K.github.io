@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the App - Jocki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- <meta http-equiv="refresh" content="5;url=https://link-to-app-store.com">
+    <script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "https://link-to-app-store.com";
+        }, 5000); // Redirect after 5 seconds
+    </script> -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+    <!-- Logo -->
+      <div class="logo">
+        <a href="#" class="logo"><img src="../assets/jocki.png" alt="Jocki Logo" style="height: 40px;"></a>
+      </div>
+        <div class="nav-links">
+            <a href="../index.html#home" class="nav-link">Home</a>
+            <a href="../about.html" class="nav-link">About</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Get the Jocki App!</h1>
+        <p>Ready to vibe? Download the Jocki app and join the party wherever you're at!</p>
+        <p>Hang tight, we’ll send you to the App Store in 5... 4... 3... ⏳</p>
+        <a href="https://link-to-app-store.com" class="app-button">Download now</a>
+        <p class="redirecting">If you are not redirected, <a href="https://link-to-app-store.com">click here to download the app</a>.</p>
+    </section>
+    
+
+    <!-- Content Section -->
+    <!-- <div class="content">
+        <h2>Download the App from the App Store</h2>
+        <p>We’ll redirect you to the App Store in 5 seconds.</p>
+        <a href="https://link-to-app-store.com" class="app-button">Download Now</a>
+        <p class="redirecting">If you are not redirected, <a href="https://link-to-app-store.com">click here to download the app</a>.</p>
+    </div> -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="logo"><img src="../assets/vinyl.png" alt="Jocki Icon" style="height: 40px;"></a>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; 2024 Jocki. All rights reserved.</p>
+  </footer>
+
+    <!-- <script>
+        // Add countdown timer functionality
+        var countdown = 5;
+        var countdownElement = document.querySelector('.redirecting');
+        setInterval(function() {
+            if (countdown > 0) {
+                countdown--;
+                countdownElement.innerHTML = "You will be redirected in " + countdown + " seconds...";
+            }
+        }, 1000);
+    </script> -->
+        <!-- JavaScript for Redirect -->
+    <script>
+        // Check if the current path is '/joinparty/*' and redirect to '/joinparty'
+        if (window.location.pathname.startsWith('/joinparty/')) {
+            window.location.replace('/joinparty');
+        }
+    </script>
+</body>
+
+</html>

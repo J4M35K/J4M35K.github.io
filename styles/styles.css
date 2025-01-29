@@ -350,6 +350,31 @@ form button:hover {
     width: 70px;
 }
 
+.content {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.app-button {
+    background-color: #e246ab;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.app-button:hover {
+    background-color: #c0358f;
+}
+
+.redirecting {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
     /* Navbar */
@@ -428,5 +453,19 @@ form button:hover {
 
     #confirmation p, #thankyou p, #privacy p, #terms p {
         font-size: 1rem;
+    }
+
+    .content {
+        padding: 15px;
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .app-button {
+        padding: 10px 18px;
+        font-size: 14px; /* Smaller button text */
+    }
+
+    .redirecting {
+        font-size: 12px; /* Smaller text for redirecting message */
     }
 }
