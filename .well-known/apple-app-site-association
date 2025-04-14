@@ -4,14 +4,7 @@
     "details": [
       {
         "appID": "FJU9A4YES3.com.joofsie.jocki",
-        "components": [
-          {
-            "/": "/joinparty/*"
-          },
-          {
-            "/": "/resetpassword/*"
-          }
-        ]
+        "paths": ["/joinparty/*"]
       }
     ]
   }
